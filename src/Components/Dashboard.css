@@ -21,6 +21,11 @@
   justify-content: space-between;
   width: 100%;
 }
+.card > div > h1 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
 
 .export__button {
   display: flex;

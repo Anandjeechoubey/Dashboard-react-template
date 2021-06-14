@@ -11,3 +11,9 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+.empty__route {
+  display: inline-block;
+  width: 80%;
+  margin: 40px auto;
+}

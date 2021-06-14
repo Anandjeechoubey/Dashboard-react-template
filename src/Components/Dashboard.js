@@ -25,11 +25,20 @@ const useStyles = makeStyles((theme) => ({
     selectEmpty: {
       marginTop: theme.spacing(2),
     },
+    tag: {
+        color: 'white',
+        backgroundColor: 'green',
+        fontSize: '15px',
+        marginLeft: '20px',
+        padding: '5px 10px',
+        borderRadius: '100px',
+    },
 }));
 
 const Tag = ({children}) => {
+    const classes = useStyles();
     return (
-        <span>{children}</span>
+        <span className={classes.tag}>{children}</span>
     )
 }
 
@@ -54,12 +63,16 @@ const Dashboard = () => {
                         </div>
                         <br />
                         <div>
-                            <span>$124,563.00</span><Tag>+ 6.9%</Tag>
+                            <h1>$124,563.00<Tag>+ 6.9%</Tag></h1>
                         </div>
                     </div>
                     <div className="card">
                         <div>
                             New Users <MoreHoriz />
+                        </div>
+                        <br />
+                        <div>
+                            <h1>94.2%<Tag>+ 6.9%</Tag></h1>
                         </div>
                     </div>
                 </Grid>

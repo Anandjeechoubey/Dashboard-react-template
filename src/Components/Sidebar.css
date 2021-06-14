@@ -39,6 +39,10 @@ h5 {
   margin-left: 5px;
 }
 
+.link {
+  text-decoration: none;
+}
+
 .sidebar .expand__more {
   float: right;
 }
